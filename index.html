@@ -24,15 +24,20 @@
 </style>
 </head>
 <body>
+<!-- REFRESH BAR JUU KABISA - HAIFICHIKI -->
+<div style="position:sticky;top:0;z-index:9999;background:#000;padding:6px 10px;display:flex;justify-content:space-between;align-items:center;">
+  <span style="color:#fff;font-weight:800;font-size:13px;">🛍️ Campus Soko</span>
+  <button onclick="location.reload()" style="background:#FACC15;color:#000;padding:8px 18px;border-radius:999px;font-weight:800;font-size:14px;border:none;cursor:pointer;">🔄 Refresh Page</button>
+</div>
+
 <header class="bg-gradient-to-r from-pink-600 via-purple-600 to-orange-500 relative z-40 shadow-lg">
   <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
     <div class="flex items-center gap-2">
       <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-2xl shadow">🛍️</div>
       <div><h1 class="font-extrabold text-lg leading-none text-white">Campus <span class="text-yellow-300">Soko</span></h1><p class="text-[11px] text-white/80">All Universities • Colleges • Kenya</p></div>
     </div>
-    <div class="flex items-center gap-2">
+    <div class="flex items-center gap-2 flex-wrap justify-end">
       <span class="hidden sm:flex text-xs bg-green-400 text-white px-2 py-1 rounded-full font-bold">● Live</span>
-      <button onclick="location.reload()" class="bg-white text-purple-700 px-3 py-2 rounded-full font-bold text-sm">🔄 Refresh</button>
       <button onclick="openQR()" class="bg-white text-purple-700 px-3 py-2 rounded-full font-bold text-sm">📷 QR</button>
       <span id="userLabel" class="hidden text-xs font-bold bg-yellow-300 text-black px-2 py-1 rounded-full"></span>
       <button id="loginBtn" onclick="openLogin()" class="bg-white px-3 py-2 rounded-full font-bold text-sm text-purple-700">Login</button>
@@ -74,7 +79,7 @@
   <div class="bg-gradient-to-r from-pink-500 via-purple-500 via-orange-500 to-teal-500 rounded-xl px-3 py-2.5 text-white flex justify-between items-center shadow"><div><h2 class="font-extrabold text-[15px] leading-tight">Nunua & Uza Campus - Kenya Nzima! 🌈</h2><p class="text-[11px] opacity-90">Chagua University, College au Place yako. Bila middleman. <span class="bg-white text-purple-700 px-2 py-0.5 rounded-full font-bold text-[10px]">✅ 100% Free</span></p></div><div class="text-3xl shrink-0">🎓</div></div>
   <div class="bg-white rounded-xl px-3 py-2 mt-2 shadow-sm border border-purple-100 flex items-center gap-2 justify-between"><p id="shareLinkText" class="text-[11px] bg-gray-100 rounded-lg px-2 py-1.5 flex-1 truncate font-mono"></p><button onclick="copyShareLink()" class="bg-black text-white px-3 py-1.5 rounded-full font-bold text-[11px] shrink-0">📋 Copy</button><a id="shareWhatsBtn" target="_blank" class="bg-green-500 text-white px-3 py-1.5 rounded-full font-bold text-[11px] shrink-0">💬 Share</a><button onclick="openQR()" class="bg-purple-600 text-white px-3 py-1.5 rounded-full font-bold text-[11px] shrink-0">📷 QR</button></div>
   <div class="bg-white rounded-2xl mt-2 shadow-sm border-2 border-purple-100 overflow-hidden">
-    <img src="image.png" onerror="this.style.display='none'" alt="Campus Soko" class="w-full h-40 object-cover">
+    <img src="image.png" onerror="this.style.display='none'" alt="Campus Soko" class="w-full h-32 object-cover">
     <div class="p-3 flex items-center gap-3">
       <div class="shrink-0 bg-white border-2 border-purple-200 rounded-xl p-1.5 text-center"><img id="homeQRImg" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fcampussoko.github.io%2Fcampus-soko%2F" alt="Scan QR" class="w-24 h-24 mx-auto"><p class="text-[10px] font-bold mt-1">📷 SCAN ME</p></div>
       <div class="flex-1"><p class="font-extrabold text-sm">Share Campus Soko kwa marafiki! 🎓</p><p class="text-[11px] text-gray-500 mt-0.5">Scan QR kushoto au Copy link chini. 100% FREE - All Universities • Colleges • Kenya</p><div class="flex gap-2 mt-2"><button onclick="copyShareLink()" class="bg-black text-white px-3 py-1.5 rounded-full font-bold text-[11px]">📋 Copy Link</button><a id="homeShareWhats" target="_blank" class="bg-green-500 text-white px-3 py-1.5 rounded-full font-bold text-[11px]">💬 Share WhatsApp</a><button onclick="openQR()" class="bg-purple-600 text-white px-3 py-1.5 rounded-full font-bold text-[11px]">📷 QR Kubwa</button></div></div>
